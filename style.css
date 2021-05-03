@@ -13,12 +13,13 @@ header {
 
 /* mainの設定 */
 main {
-  width: 960px;
+  width: 96%;
   margin: 50px auto;
   display: flex;
+  justify-content: center;
 }
 .step-box {
-  width: 300px;
+  width: 31.25%;
   background-color: #EEEEEE;
   margin-right: 30px;
   padding: 10px;
@@ -69,4 +70,18 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen {
+  main {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .step-box {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.step-box:last-child {
+  margin-bottom: 0;
 }
