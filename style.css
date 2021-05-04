@@ -12,14 +12,19 @@ header {
 
 
 /* mainの設定 */
+body {
+  width: 100%;
+}
 main {
   width: 96%;
-  margin: 50px auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .step-box {
-  width: 31.25%;
+  width: 30%;
   background-color: #EEEEEE;
   margin-right: 30px;
   padding: 10px;
@@ -72,15 +77,20 @@ footer {
   background-color: #AAAAAA;
 }
 
-@media screen {
-  main {
-    width: 100%;
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 768px){
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
   .step-box {
     width: 90%;
-    margin-right: 0;
     margin-bottom: 20px;
+    margin-right: 0;
 }
 .step-box:last-child {
   margin-bottom: 0;
